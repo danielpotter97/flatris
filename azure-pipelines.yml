@@ -15,10 +15,15 @@ variables:
   webAppName: 'anyadapp'
 
   # Environment name
-  environmentName: 'anyadapp'
+  environmentName: 'teszt'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
+
+  # Resource group
+  resourceGroupName: 'apps'
+ 
+
 
 stages:
 - stage: Archive
