@@ -12,13 +12,13 @@ variables:
   azureSubscription: 'teszt'
   
   # Web app name
-  webAppName: 'YourLinuxApp'
+  webAppName: 'anyadapp'
   
   # Resource group
   resourceGroupName: 'apps'
  
   # Environment name
-  environmentName: 'YourLinuxApp'
+  environmentName: 'anyadapp'
  
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
