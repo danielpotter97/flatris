@@ -58,7 +58,7 @@ stages:
     - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       artifact: drop
  
- - stage: Deploy
+- stage: Deploy
   displayName: Deploy stage
   dependsOn: Archive
   condition: succeeded()
