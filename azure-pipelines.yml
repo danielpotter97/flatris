@@ -58,12 +58,12 @@ stages:
     - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       artifact: drop
  
- - task: AzureRmWebAppDeployment@4
-   inputs:
-     ConnectionType: 'AzureRM'
-     azureSubscription: 'teszt'
-     appType: 'webAppLinux'
-     WebAppName: 'anyadapp'
-     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-     RuntimeStack: 'NODE|12-lts'
+    - task: AzureRmWebAppDeployment@4
+      inputs:
+        ConnectionType: 'AzureRM'
+        azureSubscription: 'teszt'
+        appType: 'webAppLinux'
+        WebAppName: 'anyadapp'
+        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+        RuntimeStack: 'NODE|12-lts'
  
