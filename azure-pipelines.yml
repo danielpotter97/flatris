@@ -79,5 +79,5 @@ stages:
               appType: webAppLinux
               appName: $(webAppName)
               runtimeStack: 'NODE|10.14'
-              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+              package: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
  
