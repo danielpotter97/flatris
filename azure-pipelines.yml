@@ -43,7 +43,7 @@ stages:
           [
             {
               "name": "SCM_DO_BUILD_DURING_DEPLOYMENT",
-              "value": "false"
+              "value": "true"
             }
           ]
     - task: ArchiveFiles@2
